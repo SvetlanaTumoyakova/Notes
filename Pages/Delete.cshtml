@@ -3,15 +3,12 @@
 @{
 	ViewData["Title"] = "Delete Note";
 }
-
-<h1>Delete Note</h1>
-
-<h3>Are you sure you want to delete this note?</h3>
+<h3 class="margin-title alert-danger" >Are you sure you want to delete this note?</h3>
 @if (Model.Note != null)
 {
     <div>
-        <h4>@Model.Note.Title</h4>
-        <p>@Model.Note.Content</p>
+        <h4 class="mb-3">@Model.Note.Title</h4>
+        <p class="mb-5">@Model.Note.Content</p>
     </div>
 }
 else
